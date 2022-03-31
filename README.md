@@ -6,7 +6,7 @@ Some .NET6 `Progress<T>` console app for testing
 ![Output](img/output.png)
 
 ### Notes:
-- As you can see in output above, `SynchronizationContext.Current` is still `null` in a .NET 6 Console App.
+- As you can see in output above, `SynchronizationContext.Current` is still `null` in a .NET6 Console App.
 - Therefore a `Progress.Report()` (and it´s `Post()` inside) is spooled onto some ThreadPool WorkerItem.
 - The result is: Some random occurrence of that `Post()`´s happens (the printing of 'X').
 - Running the app multiple times always produce other results (random).
