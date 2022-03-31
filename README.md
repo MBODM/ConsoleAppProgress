@@ -20,5 +20,3 @@ Some async/await Progress<T> console app for testing
 ### Links:
 - https://devblogs.microsoft.com/pfxteam/await-synchronizationcontext-and-console-apps/
 - https://devblogs.microsoft.com/pfxteam/await-synchronizationcontext-and-console-apps-part-2/
-
-#### Have fun.
