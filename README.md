@@ -5,7 +5,10 @@ Some async/await Progress<T> console app for testing
 ![Output](img/output.png)
   
 ### Notes:
-- As you can see in output above, SynchronizationContext.Current is still null in .NET 6 Console App.
-- Progress.Report() is spooled onto ThreadPool and shows some random occurrence (the printing of 'X').
+- As you can see in output above, SynchronizationContext.Current is still null in a .NET 6 Console App.
+- Progress.Report() (and it´s Post() inside) therefore is spooled onto some ThreadPool WorkerItem.
+- The result is: Some random occurrence of that Post()´s happens (the printing of 'X').
 - Running the app multiple times always produce other results (random).
-- This happens, cause since it´s not guaranteed when the Post()´s are executed on threadpool thread, they have random occurrence.
+- Since it´s not guaranteed when threadpool thread(s) are executed (the spooled Post()´s), they are random.
+  
+  #### Have fun.
