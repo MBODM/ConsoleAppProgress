@@ -10,7 +10,7 @@ Some .NET6 `Progress<T>` console app for testing
 - Therefore a `Progress.Report()` (and it´s `Post()` inside) is spooled onto some ThreadPool WorkerItem.
 - The result is: Some random occurrence of that `Post()`´s happens (the printing of 'X').
 - Running the app multiple times always produce other results (random).
-- It´s not guaranteed _when_ threadpool thread(s) are executed (the spooled `Post()`´s), so they are random.
+- It´s not guaranteed "when" threadpool thread(s) are executed (the spooled `Post()`´s), so they are random.
 - One solution is to write an own `IProgress<T>` implementation.
 - Another solution is to use some own specific `SynchronizationContext`.
 - The only way of waiting "_from the outside_" is to bundle `TaskCompletionSource` tasks in Progress-Handler.
