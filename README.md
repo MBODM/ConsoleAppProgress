@@ -10,5 +10,5 @@ Some async/await Progress<T> console app for testing
 - The result is: Some random occurrence of that Post()´s happens (the printing of 'X').
 - Running the app multiple times always produce other results (random).
 - Since it´s not guaranteed when threadpool thread(s) are executed (the spooled Post()´s), they are random.
-  
-  #### Have fun.
+
+### Links:
