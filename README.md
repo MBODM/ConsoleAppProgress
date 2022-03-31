@@ -1,2 +1,2 @@
 # ConsoleAppProgress
-### Some async/await Progress<T> console app for testing 
+Some async/await Progress<T> console app for testing 
