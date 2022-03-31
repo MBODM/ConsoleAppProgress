@@ -1,6 +1,6 @@
 # ConsoleAppProgress
 
-Some async/await Progress<T> console app for testing
+Some `Progress<T>` console app for testing
 
 ### Output:
 ![Output](img/output.png)
