@@ -1,6 +1,6 @@
 # ConsoleAppProgress
 
-Some `Progress<T>` console app for testing
+Some .NET6 `Progress<T>` console app for testing
 
 ### Output:
 ![Output](img/output.png)
