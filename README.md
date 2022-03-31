@@ -14,7 +14,7 @@ Some async/await Progress<T> console app for testing
 - One solution is to write an own `IProgress<T>` implementation.
 - Another solution is to use some own specific `SynchronizationContext`.
 - The only way of waiting "_from the outside_" is to bundle `TaskCompletionSource` tasks in Progress-Handler.
-- So you could `await` the whole bunch of tasks via `await Task.WhenAll(taskBundle)` in main().
+- So you could `await` the whole bunch of tasks via `await Task.WhenAll(taskBundle)` in `main()`.
 - But since this has to happen in user-code-land, it´s not that awesome type of a solution.
 
 ### Links:
